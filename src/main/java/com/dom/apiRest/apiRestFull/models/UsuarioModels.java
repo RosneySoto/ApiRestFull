@@ -1,10 +1,22 @@
 package com.dom.apiRest.apiRestFull.models;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+
+@Entity
+@Table(name = "users")
 public class UsuarioModels {
 	
 	private String nombre;
 	private String apellido;
 	private String email;
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 	
 	public UsuarioModels() {

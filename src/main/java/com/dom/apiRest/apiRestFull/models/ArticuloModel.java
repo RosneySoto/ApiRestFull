@@ -1,5 +1,6 @@
 package com.dom.apiRest.apiRestFull.models;
 
+
 public class ArticuloModel {
 
 	private long id;
